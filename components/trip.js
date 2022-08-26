@@ -19,11 +19,11 @@ const day = (n) => {
   return `${suffixes.get(pr.select(n))}`;
 };
 
-export default function Trip({ title, image, countries, days, offset, rating }) {
+export default function Trip({ title, image, n_country, n_day, offset, rating }) {
   return e("article", { className },
     e("header", null,
       e("h1", null, title),
-      e("h2", null, `${countries} ${country(countries)}, ${days} ${day(days)}`),
+      e("h2", null, `${n_country} ${country(n_country)}, ${n_day} ${day(n_day)}`),
       e("h3", null,
         e(Offset, { offset }),
         e("span", null, "emissions offset")
