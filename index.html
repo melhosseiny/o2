@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>O2 client</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="author" content="Mostafa Elshamy">
+    <meta name="description" content="o2 co2 exchange">
+    <link rel="stylesheet" href="https://busy-dog-44.deno.dev/melhosseiny/aurora/main/src/typography/type.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/base.css">
+  </head>
+  <body>
+    <main id="root"></main>
+    <footer>
+      made with <span class="heart">&hearts;</span>
+    </footer>
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@emotion/css@11.10.0/dist/emotion-css.umd.min.js" crossorigin></script>
+    <script type="module">
+      import App from "/components/app.js";
+      window.e = React.createElement;
+
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(e(App));
+    </script>
+  </body>
+</html>

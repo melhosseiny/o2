@@ -1,0 +1,66 @@
+:root {
+	--font-body: system-ui;
+	--color-bg: rgba(0,0,0,0.1);
+	--box-shadow-article: -1px 1px #fff,
+		-2px 2px #fff,
+		-3px 3px #fff,
+		-4px 4px #fff,
+		-5px 5px #fff,
+		-6px 6px #fff;
+	--text-shadow-heart: -1px 1px #fe490240,
+    -2px 2px #fe490240,
+    -3px 3px #fe490240;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: var(--font-body);
+	background-color: var(--color-bg);
+}
+
+body > footer {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-left: 4px;
+	height: 40px;
+	font-weight: bold;
+	background-color: #fff;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+.heart {
+	position: absolute;
+	font-size: 24px;
+	margin-left: 80px;
+	color: #e8308a;
+  animation: pulse 800ms linear infinite forwards;
+}
+
+@keyframes pulse {
+  20% {
+		transform: translate3d(3px, -3px, 0px);
+		text-shadow: var(--text-shadow-heart);
+		font-size: 32px;
+	}
+	50% {
+		font-size: 28px;
+	}
+  80% {
+		transform: translate3d(3px, -3px, 0px);
+		text-shadow: var(--text-shadow-heart);
+		font-size: 32px;
+	}
+}
