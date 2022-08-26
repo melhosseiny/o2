@@ -42,7 +42,7 @@ export default function Trip({ title, image, countries, days, offset, rating }) 
 const className = emotion.css`
   overflow: hidden;
   position: relative;
-  transition: all 0.05s ease;
+  transition: transform 0.05s ease, box-shadow 0.05s ease;
   background-color: #fff;
 
   &:hover {
