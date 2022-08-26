@@ -22,4 +22,4 @@ serve(async (request: Request): Promise<Reponse> => {
       "cache-control": "no-cache"
     }
   });
-});
+}, { port: 5000 });
